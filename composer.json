@@ -1,0 +1,14 @@
+{
+    "require-dev": {
+        "kahlan/kahlan": "^4.6"
+    },
+    "scripts": {
+        "test": "kahlan --coverage --reporter=verbose"
+    },
+    "autoload": {
+        "files": [
+            "./src/functions.php",
+            "./spec/ImageMock.php"
+        ]
+    }
+}
