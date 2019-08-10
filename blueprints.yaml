@@ -9,7 +9,7 @@ author:
 homepage: https://github.com/websitemacherei/grav-plugin-lazysizes
 keywords: lazy, lazyloading, lazysizes
 bugs: https://github.com/websitemacherei/grav-plugin-lazysizes/issues
-docs: https://github.com/websitemacherei/grav-plugin-lazysizes/blob/develop/README.md
+docs: https://github.com/websitemacherei/grav-plugin-lazysizes/blob/master/README.md
 license: MIT
 
 form:
