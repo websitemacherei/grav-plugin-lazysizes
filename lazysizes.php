@@ -48,8 +48,6 @@ class LazysizesPlugin extends Plugin {
         $config = $this->config->get('plugins.lazysizes');
         $widths = getConfigWidths($config['widths']);
 
-        $this->grav['debugger']->addMessage($config);
-
         // include js file
         if(!isset($config['include_js']) || $config['include_js']) {
             $this->grav['assets']->addJs('plugin://lazysizes/js/lazysizes.min.js');
