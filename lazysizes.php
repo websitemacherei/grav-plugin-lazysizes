@@ -65,7 +65,11 @@ class LazysizesPlugin extends Plugin {
             $Inline = $this->inlineImage($Excerpt);
             $InlineOriginal = parent::inlineImage($Excerpt);
 
-            $imageData = getOriginalImage($InlineOriginal['element']['attributes']['src'], $images);
+            if ($InlineOriginal !== null) {
+                $imageData = getOriginalImage($InlineOriginal['element']['attributes']['src'], $images);
+            } else {
+                $imageData = null;
+            }
 
             return manipulateElement($Inline, $imageData, $config);
         };  
